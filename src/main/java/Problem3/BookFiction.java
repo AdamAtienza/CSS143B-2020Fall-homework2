@@ -8,12 +8,14 @@ public class BookFiction extends Book {
 
     public BookFiction(String title, String author, String genres) {
         // homework
+        super(title, author);
         // tip: use the 'super' keyword
     }
 
     // copy constructor
     public BookFiction(BookFiction anotherBook) {
         // homework
+        super(anotherBook);
         // tip: use the 'super' keyword
     }
 
@@ -25,5 +27,6 @@ public class BookFiction extends Book {
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
         // homework
+        return numOfDaysPastDue * 2;
     }
 }
